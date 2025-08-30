@@ -24,15 +24,6 @@
     </header>
     <main class="container">
         <form> <!--Para fazer formulário, uma área onde o usuário pode inserir dados-->
-
-        <ul>
-            <?php
-                foreach($usuario as $usuarios){
-                    echo "<il>{$usuario['nome']}</il>";
-                };
-
-            ?>
-        </ul>
             <h1>Login</h1>
             <div class="input-box"> <!--uma caixa onde o usuário pode digitar ou selecionar informações. Ele faz parte de um formulário e serve para coletar dados que depois podem ser enviados ou processados.-->
                 <input placeholder="Usuário" type="email"> <!--O placeholder é para deixar aquela mensagem "digite sua resposta"-->
