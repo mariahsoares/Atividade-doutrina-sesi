@@ -2,7 +2,7 @@
     class UsuariosService{
         private $db;
 
-        private function __construct(){
+        public function __construct(){
             $this->db = new SQLite3('banco_geral_de_informacoes');
 
             $this->db->exec("CREATE TABLE IF NOT EXISTS usuarios (
@@ -24,12 +24,6 @@
 
             return $Professores;
         }
-
-    // $meuBanco = new SQLite('banco_usuarios');
-    //professor
-
-
-    $result = $meuBanco->("SELECT * FROM usuarios");
     }
 
 
