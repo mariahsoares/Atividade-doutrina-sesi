@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/*Procedimento padrão para colocar a fonte que quer dentro do css*/
+
+
+/*configuração inicial*/
+* {
+    margin: 0%;
+    padding: 0%; /*è a distância entre a margim e o elemento (texto, imagem..)*/
+    box-sizing: border-box; /*Melhor do que usar somente o border, por que o border pode bagunçar o layout enquanto o border-box não.*/
+    font-family: "Josefin Sans", sans-serif; /*apenas a fonte escolhida*/
+}
+
+/*configuração geral do backgroud e do container*/
+body {
+    display: flex; /*Você pode controlar facilmente os itens*/
+    justify-content: center; /*Centrazilar tudo que está dentro do conteiner (horizontal)*/
+    align-items: center; /*Centrazilar tudo que está dentro do conteiner (vertical)*/
+    min-height: 100vh; /*É para o tamanho mínimo, porém nesse caso é 100% da tela*/
+    background: rgb(250, 250, 250)/*para colocar uma imagem de fundo na tela*/
+}
+/*conteiner*/
+.container {
+    width: 420px; /*Tamanho do container*/
+    background-color: rgb(255, 117, 170);
+    border: 2px solid rgba(255, 255, 255, .2); /*borda, o .2 é a opacidade*/
+    border-radius: 10px; /*para as bordas ficarem arredondadas*/
+    color: white;
+    padding: 30px 40px; /*o 30px é para cima e para baixo e 40px para os lados*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;/*Isso aqui é uam sombra que coloca no container, esse código ja vem pronto de uma site*/
+    backdrop-filter: blur(10px); /*adiciona um blur de fundo no container*/
+}
+
+/*titulo*/
+.container h1 {
+    font-size: 36px; /*deixar a letra do titulo maior*/
+    text-align: center; /*deixar o titulo centralizado*/
+}
+
+/*configuração geral do input-box*/
+.input-box {
+    position: relative; /*isso por que vamos ter que colocar os icones dentro das caixinhas de usuario e senha, e isso ajuda*/
+    width: 100%; /*Colocamos um padding dentro do container e agr isso aqui vai fazer com que a caixinha usuario e senha ocupe até o litemite do padding*/
+    height: 50px;
+    margin: 30px 0px;
+/*Essa é meio que a configuração geral, porém precisa fazer uma configuração especifica do outro input que está dentro dessa input-box*/
+}
+
+/*configurações de tudo que esta dentro do input-box input*/
+.input-box input {
+    width: 100%; /*Vai ocupar 100% do que a gente ja delimitou ali em cima. define a largura de um elemento (quão “comprido” ele é na horizontal).*/
+    height: 100%; /*mesma coisa, vai ocupar 100% do que a gente delimitou. define a altura de um elemento (quão “alto” ele é na vertical).*/
+    background-color: rgb(252, 158, 194);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    outline: none;/*é um contorno que fica quando clica no usuario e senha*/
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 20px 45px 20px 20px; /*20px em cima, 45px do lado direito, 20px em baixo e 20px do lado esquerdo*/
+}
+
+/*
+    margin e padding
+
+    1 valor - margin: 20px - todos os lados
+    2 valores - margin: 20px 30px - em cima e embaixo, dos lados
+    3 valores - margin: 20px 10px 30px - em cima, dos lados, embaixo
+    4 valores - margin: 20px 30px 10px 15px- em cima, lado direito, embaixo, lado esquerdo
+*/
+
+/*cor da mensagem usuario e senha*/
+.input-box input::placeholder {
+    color: rgb(253, 230, 239);
+}
+
+/*icone*/
+.input-box i { 
+    position: absolute; /*eu quero que o icone fique num lugar expecifico, com isso ele vai tudo para a direita, porém eu não quero que fique colado no final então a proxima variavel vai ajudar nisso*/
+    right: 20px;/*ou seja, ele foi todo pra direita e voltou 20px*/
+    top: 50%; /*Aqui o icone começou na metade mesmo com o 50%, ai eu poderia colocar uns 30% que iria ficar centralizado, mas tem uma forma melhor, ja que isso de diminuir nem sempre vai funcionar*/
+    transform: translateY(-50%); /*dessa forma, vai sempre ficar centralizado, e fica melhor do que colocar 30%*/
+    font-size: 20px;
+    color: rgb(255, 110, 166);
+}
+
+/*espaçamento do lembrar senha e esqueci a senha*/
+.lembrar-esquecer {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+/*Cor do checkbox (quadradinho)*/
+.lembrar-esquecer label input {
+    accent-color: white;
+    margin-right: 5px;
+}
+
+/*esqueci a senha*/
+.lembrar-esquecer a {
+    text-decoration: none; /*tirar a cor azul do "esqueci a senha"*/
+    color: rgb(255, 255, 255); 
+}
+
+/*para passar o mouse por cima e ficar destacado*/
+.lembrar-esquecer a:hover {
+    text-decoration: underline; /*para quando passar o mouse por cima ficar destacado*/
+}
+
+/*botão de login*/
+.login {
+    width: 100%; /*para ocupar todo espaço disponivel do container*/
+    height: 50px; /*o quão alto vai ficar na vertical*/
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer; /*para quando passar o mouse ficar uma mãozinha*/
+    font-size: 16px;
+    color:  rgb(255, 117, 170);
+    font-weight: 700; /*o quão grossa a letra vai ficar*/
+    box-shadow: rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/*para passar o mouse por cima fazer um efeito*/
+.login:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: white;
+    transition: 0.5s; /*para fazer uma transição quando passar o mouse por cima */
+}
+
+/*posição, tamanho e margin do link*/
+.registrar-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+
+}
+
+/*cor e espessura do link*/
+.registrar-link a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/*para passar o mouse por cima e ficar destacado*/
+.registrar-link a:hover {
+    text-decoration: underline; 
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--é um link para importar icones-->
+    <link rel="stylesheet" href="style.css"> <!--Para se conectar com o css-->
+    <title>TELA DE LOGIN</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main class="container">
+        <form> <!--Para fazer formulário, uma área onde o usuário pode inserir dados-->
+            <h1>Login</h1>
+            <div class="input-box"> <!--uma caixa onde o usuário pode digitar ou selecionar informações. Ele faz parte de um formulário e serve para coletar dados que depois podem ser enviados ou processados.-->
+                <input placeholder="Usuário" type="email"> <!--O placeholder é para deixar aquela mensagem "digite sua resposta"-->
+                <i class="bx bxs-user"></i> <!--Isso é para o icone que pegamos num site, esse é o código para "chamar ele"-->
+            </div>
+            <div class="input-box">
+                <input placeholder="Senha" type="password">
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div>
+                <label class="lembrar-esquecer"> <!--Aqui, a classe remember-forgot ajudaria a estilizar o bloco com o checkbox e o link.-->
+                    <label><input type="checkbox"> Lembrar senha</label> <!--coloquei dentro de um label por que o "lembrar senha" tava ficando separado da caixinha-->
+                    <a href="#">Esqueci a senha</a>
+                </label>
+            </div>
+            
+            <button type="submit" class="login">Login</button>
+            
+            <div class="registrar-link"> <!--Também ajuda a estilizar depois no css-->
+                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            </div>
+
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
