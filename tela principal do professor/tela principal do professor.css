@@ -1,82 +1,93 @@
-/* Estilos gerais */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f4;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/*Procedimento padrão para colocar a fonte que quer dentro do css*/
+
+
+/*configuração inicial*/
+* {
+    margin: 0%;
+    padding: 0%; /*è a distância entre a margim e o elemento (texto, imagem..)*/
+    box-sizing: border-box; /*Melhor do que usar somente o border, por que o border pode bagunçar o layout enquanto o border-box não.*/
+    font-family: "Josefin Sans", sans-serif; /*apenas a fonte escolhida*/
 }
 
+
+body {
+    background-color: rgb(252, 158, 194);
+}
 /* Header */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #0078d7;
-  color: white;
-  padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 117, 170);
+    color: white;
+    padding: 10px 20px;
 }
 
-header h2 {
-  margin: 0;
+header h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
 header button {
-  background: red;
-  border: none;
-  color: white;
-  padding: 8px 15px;
-  cursor: pointer;
-  border-radius: 5px;
+    background: rgb(252, 158, 194);
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Container principal */
 .container {
-  padding: 20px;
+    padding: 20px;
+    background-color: rgb(252, 158, 194);
 }
 
 /* Botão Cadastrar turma */
-.btn-cadastrar {
-  background: #0078d7;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 20px;
+.botão-cadastrar {
+    background: rgb(255, 117, 170);
+    color: rgba(255, 255, 255, 0.925);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 /* Estilos da tabela */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  background: white;
+    width: 100%;
+    border-collapse: collapse;
+    background: rgb(255, 255, 255);
 }
 
-th, td {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: left;
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
 }
 
 th {
-  background: #f0f0f0;
+    background: #f0f0f0;
 }
 
 /* Botões de Ação */
 .btn-excluir {
-  background: #e74c3c;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 3px;
-  cursor: pointer;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 .btn-visualizar {
-  background: #2ecc71;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 3px;
-  cursor: pointer;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
 }
