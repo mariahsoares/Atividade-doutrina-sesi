@@ -53,11 +53,18 @@ body {
   font-size: 0.95rem;
 }
 
-.checkbox-row {
+ .check-termos {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 16px;
+  
+}
+
+.check-termos input label {
+    margin: 5px;
+}
+
 }
 
 .btn {
