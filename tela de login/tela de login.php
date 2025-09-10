@@ -113,7 +113,7 @@ function isNullOrEmpty($str)
             <button type="submit" name="login" class="login">Login</button>
 
             <div class="registrar-link"> <!--Também ajuda a estilizar depois no css-->
-                <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                <p>Não tem uma conta? <a href="../tela de cadastro/Tela de cadastro.php" name="cadastro">Cadastre-se</a></p>
             </div>
 
         </form>
