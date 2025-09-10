@@ -24,6 +24,13 @@
 
             return $Professores;
         }
+
+        public function AdicionarUsuario($email, $senha){
+            $stmt = $this->db->prepare("INSERT INTO usuarios (nome, email, senha) VALUES (:nome, :email, :senha)");
+            $stmt->bindValue(':email', $email, SQLITE3_TEXT);
+            $stmt->bindValue(':senha', password_hash($senha, PASSWORD_BCRYPT), SQLITE3_TEXT); // Usando hash para segurança
+            return $stmt->execute();
+        } 
     }
 
 
