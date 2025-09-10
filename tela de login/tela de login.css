@@ -16,18 +16,19 @@ body {
     justify-content: center; /*Centrazilar tudo que está dentro do conteiner (horizontal)*/
     align-items: center; /*Centrazilar tudo que está dentro do conteiner (vertical)*/
     min-height: 100vh; /*É para o tamanho mínimo, porém nesse caso é 100% da tela*/
-    background: rgb(250, 250, 250)/*para colocar uma imagem de fundo na tela*/
+    background: #f0f0f0/*para colocar uma imagem de fundo na tela*/
 }
 /*conteiner*/
 .container {
     width: 420px; /*Tamanho do container*/
-    background-color: rgb(255, 117, 170);
-    border: 2px solid rgba(255, 255, 255, .2); /*borda, o .2 é a opacidade*/
+    background-color: #4f46e5;
+    border: 1px solid #ccc;
     border-radius: 10px; /*para as bordas ficarem arredondadas*/
     color: white;
     padding: 30px 40px; /*o 30px é para cima e para baixo e 40px para os lados*/
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;/*Isso aqui é uam sombra que coloca no container, esse código ja vem pronto de uma site*/
-    backdrop-filter: blur(10px); /*adiciona um blur de fundo no container*/
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);/*Isso aqui é uam sombra que coloca no container, esse código ja vem pronto de uma site*/
+    
+    
 }
 
 /*titulo*/
@@ -49,7 +50,7 @@ body {
 .input-box input {
     width: 100%; /*Vai ocupar 100% do que a gente ja delimitou ali em cima. define a largura de um elemento (quão “comprido” ele é na horizontal).*/
     height: 100%; /*mesma coisa, vai ocupar 100% do que a gente delimitou. define a altura de um elemento (quão “alto” ele é na vertical).*/
-    background-color: rgb(252, 158, 194);
+    background-color: #a49dff;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
     outline: none;/*é um contorno que fica quando clica no usuario e senha*/
@@ -69,7 +70,7 @@ body {
 
 /*cor da mensagem usuario e senha*/
 .input-box input::placeholder {
-    color: rgb(253, 230, 239);
+    color: rgb(253, 250, 251);
 }
 
 /*icone*/
@@ -79,7 +80,7 @@ body {
     top: 50%; /*Aqui o icone começou na metade mesmo com o 50%, ai eu poderia colocar uns 30% que iria ficar centralizado, mas tem uma forma melhor, ja que isso de diminuir nem sempre vai funcionar*/
     transform: translateY(-50%); /*dessa forma, vai sempre ficar centralizado, e fica melhor do que colocar 30%*/
     font-size: 20px;
-    color: rgb(255, 110, 166);
+    color: #4f46e5;
 }
 
 /*espaçamento do lembrar senha e esqueci a senha*/
@@ -115,7 +116,7 @@ body {
     border-radius: 40px;
     cursor: pointer; /*para quando passar o mouse ficar uma mãozinha*/
     font-size: 16px;
-    color:  rgb(255, 117, 170);
+    color: #4f46e5;
     font-weight: 700; /*o quão grossa a letra vai ficar*/
     box-shadow: rgba(0, 0, 0, 0.1);
     margin-top: 20px;
