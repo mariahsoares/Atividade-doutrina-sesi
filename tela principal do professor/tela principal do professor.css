@@ -10,43 +10,40 @@
     font-family: "Josefin Sans", sans-serif; /*apenas a fonte escolhida*/
 }
 
-
 body {
-    background-color: rgb(252, 158, 194);
+    background-color: white;
 }
-/* Header */
+/*espaço onde ta o nome do professor*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(255, 117, 170);
+    background: #4f46e5;
     color: white;
     padding: 10px 20px;
 }
-
+/*nome do professor*/
 header h1 {
     margin: 0;
     font-size: 24px;
 }
-
+/*botão de sair*/
 header button {
-    background: rgb(252, 158, 194);
+    background: #a49dff;
     border: none;
     color: white;
     padding: 8px 15px;
     cursor: pointer;
     border-radius: 5px;
 }
-
 /* Container principal */
 .container {
-    padding: 20px;
-    background-color: rgb(252, 158, 194);
+    padding: 40px;
+    background-color: #a49dff;
 }
-
 /* Botão Cadastrar turma */
 .botão-cadastrar {
-    background: rgb(255, 117, 170);
+    background: #4f46e5;
     color: rgba(255, 255, 255, 0.925);
     padding: 10px 20px;
     border: none;
@@ -54,12 +51,12 @@ header button {
     cursor: pointer;
     margin-bottom: 20px;
 }
-
 /* Estilos da tabela */
 table {
     width: 100%;
-    border-collapse: collapse;
     background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-collapse: collapse;
 }
 
 th,

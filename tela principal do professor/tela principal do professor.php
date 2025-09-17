@@ -31,24 +31,30 @@
                     <td>1</td>
                     <td>Desenvolvimento de Sistemas SA01</td>
                     <td>
-                        <button class="btn-excluir">Excluir</button>
                         <button class="btn-visualizar">Visualizar</button>
+                    </td>
+                    <td>
+                        <button class="btn-excluir">Excluir</button>
                     </td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>Redes de Computadores SN02</td>
                     <td>
-                        <button class="btn-excluir">Excluir</button>
                         <button class="btn-visualizar">Visualizar</button>
+                    </td>
+                    <td>
+                        <button class="btn-excluir">Excluir</button>
                     </td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>Desenvolvimento de Sistemas B402</td>
                     <td>
-                        <button class="btn-excluir">Excluir</button>
                         <button class="btn-visualizar">Visualizar</button>
+                    </td>
+                    <td>
+                        <button class="btn-excluir">Excluir</button>
                     </td>
                 </tr>
             </tbody>
