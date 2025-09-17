@@ -56,14 +56,24 @@ body {
  .check-termos {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
   padding: 5px;
+  gap: 5px;
+  
 }
 
+
 .check-termos input[type="checkbox"] {   
-    width: 18px; /* Tamanho do checkbox */
-    height: 18px;
+  width: 16px; /* Tamanho do checkbox */
+  height: 16px;
+  margin: 0;  /*remove margem padrão do navegador*/
+  transform: translateY(1px); /* ajuste fino*/
+  margin-left: -4px; /* empurra o quadradinho pra trás */
+  
+}
+
+.check-termos label {
+  margin: 0; /* tira espaçamento extra */
 }
 
 
